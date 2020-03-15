@@ -2,7 +2,8 @@
   "name": "@followwinter/state-machine",
   "version": "1.0.0",
   "description": "状态机，编排复杂流程",
-  "main": "index.js",
+  "main": "/dist/index.bundle.js",
+  "files": ["/dist"],
   "scripts": {
     "start": "webpack-dev-server",
     "test": "jest"
