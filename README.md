@@ -12,13 +12,16 @@ npm install @followwinter/state-machine
 ```
 - 配置
 ```jsx harmony
+        const taskA = ()=>{return 'payloadFromA'}
+        const taskB = (payload)=>{console.log(payload)}
+        
         const stateMachine = new StateMachine({
             'A': {
-                task: ()=>{return 'payloadFromA'},
+                task: taskA,
                 next: 'B'
             },
             'B': {
-                task: (payload)=>{console.log(payload)},
+                task: taskB,
             }
         })
         stateMachine.run('A', 'initialPayload') // 输出 payloadFromA
