@@ -1,6 +1,6 @@
 {
   "name": "@followwinter/state-machine",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "状态机，编排复杂流程",
   "main": "/dist/index.bundle.js",
   "files": [
