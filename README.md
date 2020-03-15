@@ -39,7 +39,7 @@ npm install @followwinter/state-machine
         - payload: object - 负载
 
 - Task:
-    - task: function - 该状态的任务
+    - task: function - 该状态的任务，可以返回 promise 或者任意值
     - next: string | function | object - 下一个任务的状态转化器
         - string：直接指定状态
         - function：将任务的执行结果作为入参数，该函数的声明如下：
