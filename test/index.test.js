@@ -80,4 +80,27 @@ describe('状态机测试', () => {
         expect(BTask).toHaveBeenCalledTimes(1)
         expect(BTask.mock.calls[0]).toEqual(['payloadFromA'])
     })
+
+    test.skip('多层任务-支持 promise', () => {
+        const ATask = jest.fn()
+        ATask.mockResolvedValue('payloadFromA')
+        const BTask = jest.fn()
+        const sm = new StateMachine({
+            'A': {
+                task: ATask,
+                next: {
+                    'payloadFromA': 'B'
+                }
+            },
+            'B': {
+                task: BTask,
+            }
+        })
+        sm.run('A', 'initialPayload')
+        expect(ATask).toHaveBeenCalledTimes(1)
+        expect(ATask.mock.calls[0]).toEqual(['initialPayload'])
+        // TODO: 这里需要等待 promise 执行完成之后才执行，还未找到方法可以解决
+        expect(BTask).toHaveBeenCalledTimes(1)
+        expect(BTask.mock.calls[0]).toEqual(['payloadFromA'])
+    })
 })

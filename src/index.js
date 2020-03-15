@@ -35,7 +35,7 @@ class StateMachine {
      * @param {*} [payload]
      */
     run(state, payload) {
-        if (!state) {
+        if (state === undefined) {
             return;
         }
         if (!this.stateMap.hasOwnProperty(state)) {
@@ -43,10 +43,10 @@ class StateMachine {
         }
         const task = this.stateMap[state]
         const nextPayload = task.run(payload)
-        if (!nextPayload) {
+        if (nextPayload === undefined) {
             return
         }
-        if (nextPayload.hasOwnProperty('then')) {
+        if (typeof nextPayload['then'] === "function") {
             nextPayload.then(payload => this.next(task, payload))
                 .catch(e => {
                     throw e
