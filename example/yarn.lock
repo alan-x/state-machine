@@ -1662,10 +1662,10 @@
   resolved "https://registry.yarnpkg.com/@csstools/normalize.css/-/normalize.css-10.1.0.tgz#f0950bba18819512d42f7197e56c518aa491cf18"
   integrity sha512-ij4wRiunFfaJxjB0BdrYHIH8FxBJpOwNPhhAcunlmPdXudL1WQV1qoP9un6JsEBAgQH+7UXyyjh0g7jTxXK6tg==
 
-"@followwinter/state-machine@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@followwinter/state-machine/-/state-machine-1.0.1.tgz#2ace844e1049685c589abdae600ca0e550d49898"
-  integrity sha512-09cT1+5gAjcKlA6RHK1MkPYPn1xqZ0v095mZY2ge9175zzmvR/yjru/15QqWPyyvwIMdtmf+Mj7MWykuuNunpw==
+"@followwinter/state-machine@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@followwinter/state-machine/-/state-machine-1.0.2.tgz#a91fd85b6b39b5af9a3557a06af348dd8f7b8059"
+  integrity sha512-MYAcOEF/iKLTAylcs/PHHr+W927IK24AqMtDHBtxGlt9uvsewteYeY2bFUG/AqCPkiZHxtTfZMytVfd77NSy1g==
 
 "@hapi/address@2.x.x":
   version "2.1.4"

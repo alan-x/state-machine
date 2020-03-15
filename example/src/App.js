@@ -51,8 +51,8 @@ class App extends React.Component {
         'showBindModal': {
             task: this.showBindModal,
             next: {
-                0: 'forwardToIndex',
-                1: 'forwardToBind'
+                0: 'forwardToBind',
+                1: 'forwardToIndex'
             },
         },
         'forwardToBind': {
