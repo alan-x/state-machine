@@ -1,0 +1,31 @@
+{
+  "name": "@followwinter/state-machine",
+  "version": "1.0.0",
+  "description": "状态机，编排复杂流程",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/followWinter/state-machine.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/followWinter/state-machine/issues"
+  },
+  "homepage": "https://github.com/followWinter/state-machine#readme",
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.8.7",
+    "babel-loader": "^8.0.6",
+    "jest": "^25.1.0",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
