@@ -43,7 +43,7 @@ describe('状态机测试', () => {
         const sm = new StateMachine({
             'A': {
                 task: ATask,
-                next: (payload)=>({
+                next: (payload) => ({
                     "state": 'B',
                     payload
                 })
